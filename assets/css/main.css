@@ -1476,7 +1476,7 @@ box-shadow: -1px 2px 37px -1px rgba(0,0,0,0.71);}
 	padding: 0;
 
 }
- 
+
   #carouselExampleControls > * {
 height: inherit;
   }
@@ -1673,9 +1673,6 @@ positioned our isntructors come to yo div at bottom of container
 	max-width: 100%; height: auto;
 	margin: auto;
 	border-radius: 10%;
-
-
-
 }
 
 @media screen  and (min-width:1300px){
@@ -1686,6 +1683,9 @@ positioned our isntructors come to yo div at bottom of container
 	}
 	.who-div{
 
+	}
+	.who-we-are{
+		max-width: 80%;
 	}
 
 }
