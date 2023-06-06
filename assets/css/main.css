@@ -1476,13 +1476,7 @@ box-shadow: -1px 2px 37px -1px rgba(0,0,0,0.71);}
 	padding: 0;
 
 }
-  #carouselExampleControls {
-	max-height: 1000px;
-	-webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-	clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-	clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-	overflow: hidden;
-  }
+ 
   #carouselExampleControls > * {
 height: inherit;
   }
