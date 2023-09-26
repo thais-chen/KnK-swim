@@ -1927,3 +1927,14 @@ footer {
 }
 
  */
+.map-heading p{
+   color: rgb(69, 128, 150);
+              font-weight: bold;
+              font-size: 2rem;
+              text-align: center;
+
+}
+
+.map-cities{
+  font-size: 1.1rem;
+}
