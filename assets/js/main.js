@@ -408,3 +408,46 @@ function hideFunction() {
 	  x.style.display = "none";
 	}
   }
+
+  // Add click event listeners to city headings
+// Add click event listeners to city headings
+const cityHeadings = document.querySelectorAll('.map-city');
+cityHeadings.forEach(heading => {
+    heading.addEventListener('click', () => {
+        // Get the target city from the data attribute
+        const targetCity = heading.getAttribute('data-target');
+
+        // Hide all city content
+        document.querySelectorAll('.map-content').forEach(content => {
+            content.style.display = 'none';
+        });
+
+        // Show the content for the selected city
+        const selectedCityContent = document.getElementById(targetCity + 'Content');
+        selectedCityContent.style.display = 'block';
+
+        // Change the font color for the selected city and add a blue underline
+        cityHeadings.forEach(otherHeading => {
+            if (otherHeading !== heading) {
+                otherHeading.style.textDecoration = ''; // Remove underline for other elements
+                otherHeading.style.color = ''; // Restore the default color for other elements
+            } else {
+                heading.style.textDecoration = 'underline'; // Add underline to the selected city
+                heading.style.textDecorationColor = 'rgb(0, 212, 255)'; // Specific underline color
+				
+            }
+        });
+    });
+
+    heading.addEventListener('mouseenter', () => {
+        // Change the font color on hover
+        heading.style.color = 'rgb(0, 212, 255)'; // Change the color to your desired hover color
+    });
+
+    heading.addEventListener('mouseleave', () => {
+        // Restore the original font color when not hovering
+        if (!heading.classList.contains('selected')) {
+            heading.style.color = ''; // Empty string to use the default color
+        }
+    });
+});

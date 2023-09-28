@@ -1933,14 +1933,26 @@ footer {
 }
 
  */
-.map-heading p{
-   color: rgb(69, 128, 150);
-              font-weight: bold;
-              font-size: 2rem;
-              text-align: center;
 
+
+.map-heading {
+  max-width: fit-content;
 }
 
-.map-cities{
+.map-heading p {
+  color: rgb(69, 128, 150);
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+
+}
+/* Add CSS rules for the hover effect */
+.map-city:hover {
+  cursor: pointer;
+  color: rgb(0, 212, 255)
+  /* Change the color to your desired hover color */
+}
+
+.map-cities {
   font-size: 1.1rem;
 }
