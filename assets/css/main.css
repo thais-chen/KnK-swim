@@ -1800,6 +1800,12 @@ positioned our isntructors come to yo div at bottom of container
   padding-left: 1rem;
   text-align: center;
 }
+.miami-img {
+  margin-top: 2rem;
+}
+.miami-text {
+  margin-top: 2rem;
+}
 .kevin-div {
   background-color: #feffffbe;
 }
