@@ -215,7 +215,7 @@ body,
 input,
 select,
 textarea {
-  color: #ffffff;
+
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 1000;
   font-size: larger;
@@ -263,7 +263,6 @@ p {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -272,7 +271,7 @@ h6 {
   line-height: 1.5;
   margin: 5px 0 1rem 0;
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
+
 }
 
 h1 a,
@@ -756,12 +755,8 @@ ol li {
 ul {
   list-style: disc;
   margin: 0 0 2rem 0;
-  padding-left: 1em;
 }
 
-ul li {
-  padding-left: 0.5em;
-}
 
 ul.alt {
   list-style: none;
@@ -1624,12 +1619,14 @@ positioned our isntructors come to yo div at bottom of container
   background-color: rgb(240, 255, 255);
   color: #00a1a1;
   margin-bottom: 0;
-
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
   font-weight: 600;
 }
 .p-bkgd {
   margin-left: 2rem;
   margin-top: 3rem;
+
 }
 
 #wave-p {
@@ -1650,6 +1647,7 @@ positioned our isntructors come to yo div at bottom of container
   margin: 1rem;
   background-color: rgba(255, 255, 255, 0.739);
   text-align: center;
+  border-radius: 30px;
 }
 
 .info-boxP {
@@ -1758,7 +1756,7 @@ positioned our isntructors come to yo div at bottom of container
   max-width: 100%;
   height: auto;
   margin: auto;
-  border-radius: 10%;
+  border-radius: 30px;
 }
 
 @media screen and (min-width: 1300px) {
@@ -1906,34 +1904,6 @@ footer {
   width: 100%;
   height: 100%;
 }
-/*gallery */
-/* .gal{
-	flex-wrap: wrap;
-
-}
-
-.gal-col{
-
-	flex: 1 1 auto;
-    flex-basis: 175px;
-    margin: .5em;
-    max-width: 530px;
-    max-height: 300px;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-	flex-basis: calc(175px * 1 );
-}
-.gal-col img{
-	display: inline-block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-
- */
-
 
 .map-heading {
   max-width: fit-content;
@@ -1955,4 +1925,41 @@ footer {
 
 .map-cities {
   font-size: 1.1rem;
+}
+.la-pricing > div {
+  width: max-content;
+}
+.pricing-list-la{
+  list-style: none;
+}
+.pricing-list-la > li {
+  font-weight: 500;
+  font-size: larger
+}
+.la-pricing-title{
+    color: #00a1a1;
+    font-weight: 850;
+    line-height: 1.5;
+    margin: 5px 0 1rem 0;
+    font-size: larger;
+ }
+
+ .la-pricing > div {
+  border-radius: 30px;
+  background-color: white;
+ }
+
+.class-photo{
+  max-width: 300px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+figcaption{
+  background-color: white;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  max-width: 300px;
+  height: 50px;
+  margin-top: -15px;
+  text-align: center;
 }
