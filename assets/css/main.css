@@ -1,6 +1,8 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap');
+
+
 /*
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
@@ -95,7 +97,12 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
+body {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
 article,
 aside,
 details,
@@ -113,7 +120,9 @@ section {
 body {
   line-height: 1;
 }
-
+html {
+  overflow-x: hidden;
+}
 ol,
 ul {
   list-style: none;
@@ -1460,16 +1469,20 @@ body.is-preload #header .content .inner {
     -webkit-transform 0.325s ease-in-out;
   -ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
   transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
-  padding: 2rem 2.5rem 1.5rem 2.5rem;
   margin: 3rem 3rem 3rem;
   position: relative;
-  width: 75rem;
   max-width: 100%;
+    padding: 2rem 2.5rem 1.5rem 2.5rem;
   background-color: rgb(192 245 255 / 82%);
   border-radius: 4px;
   opacity: 0;
 }
+@media (min-width: 767.98px) {
+ #main article {
+  width: 75rem;
+ }
 
+}
 #main article.active {
   -moz-transform: translateY(0);
   -webkit-transform: translateY(0);
@@ -1520,7 +1533,7 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 736px) {
   #main {
-    width: 80%;
+
   }
 
   #main article .close:before {
@@ -2000,4 +2013,22 @@ li > a{
 .classes-p{
     font-family: 'Noto Sans', sans-serif;
     font-weight: 300;
+}
+.notoBold{
+  font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+@media (max-width: 767.98px) {
+  .noPadding{
+    padding: 0;
+  }
+  .quoteMobileMargin{
+    margin-right: 2rem;
+  }
+  .lessonsClass{
+    padding: 0;
+  }
+  .class-photo{
+    max-width: 250px;
+  }
 }
