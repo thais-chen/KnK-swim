@@ -1,6 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap');
 /*
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
@@ -1446,9 +1446,7 @@ body.is-preload #header .content .inner {
   max-width: 100%;
   z-index: 3;
 }
-#main article p {
-  color: black;
-}
+
 #main article h1 {
   font-size: large;
 }
@@ -1465,7 +1463,7 @@ body.is-preload #header .content .inner {
   padding: 2rem 2.5rem 1.5rem 2.5rem;
   margin: 3rem 3rem 3rem;
   position: relative;
-  width: 90rem;
+  width: 75rem;
   max-width: 100%;
   background-color: rgb(192 245 255 / 82%);
   border-radius: 4px;
@@ -1858,7 +1856,7 @@ footer {
 }
 
 .poolPrice li {
-  display: inline-block;
+
   padding: 1rem;
 }
 .largePrice {
@@ -1952,13 +1950,23 @@ footer {
   max-width: 400px;
 }
 .class-photo{
-  max-width: 300px;
+  max-width: 400px;
   border-radius: 30px;
 
 }
-.swim-classes-even{
-
-  border-radius: 30px;
+.classes{
+  background-color: white;
+}
+.swim-classes{
+  background-color: white;
+}
+.swim-classes-top {
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+}
+.swim-classes-bottom {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 .inner > p {
   color: #ffffff;
@@ -1983,4 +1991,13 @@ li > a{
         margin: 5px 0 1rem 0;
         text-transform: uppercase;
         letter-spacing: 0.2rem;
+}
+.classes-p-title{
+  font-size: 1.5rem;
+  color: #00a1a1;
+  font-family: 'Noto Sans', sans-serif;
+}
+.classes-p{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
 }
