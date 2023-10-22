@@ -258,7 +258,7 @@ a:active {
 strong,
 b {
   color: #110b0b;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 em,
@@ -299,7 +299,7 @@ h3.major,
 h4.major,
 h5.major,
 h6.major {
-  border-bottom: solid 1px #ffffff;
+  border-bottom: solid 1px #509ea0;
   width: -moz-max-content;
   width: -webkit-max-content;
   width: -ms-max-content;
@@ -1941,7 +1941,7 @@ footer {
   width: max-content;
 }
 .pricing-list-la{
-  list-style: none;
+ padding-left:1.5rem;
 }
 .pricing-list-la > li {
   font-weight: 500;
@@ -2003,12 +2003,13 @@ li > a{
         line-height: 1.5;
         margin: 5px 0 1rem 0;
         text-transform: uppercase;
-        letter-spacing: 0.2rem;
+
 }
 .classes-p-title{
   font-size: 1.5rem;
   color: #00a1a1;
   font-family: 'Noto Sans', sans-serif;
+  padding-bottom: 2rem;
 }
 .classes-p{
     font-family: 'Noto Sans', sans-serif;
@@ -2017,6 +2018,10 @@ li > a{
 .notoBold{
   font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
+}
+.articlePadding{
+  padding-top: 1rem;
+  border-bottom: solid 1px #509ea0;
 }
 @media (max-width: 767.98px) {
   .noPadding{
