@@ -2037,3 +2037,6 @@ li > a{
     max-width: 250px;
   }
 }
+.price-class{
+  color: green;
+}
