@@ -1,11 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap');
 
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html,
 body,
@@ -95,7 +91,12 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
+body {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
 article,
 aside,
 details,
@@ -113,7 +114,9 @@ section {
 body {
   line-height: 1;
 }
-
+html,body {
+  overflow-x: hidden;
+}
 ol,
 ul {
   list-style: none;
@@ -215,7 +218,7 @@ body,
 input,
 select,
 textarea {
-  color: #ffffff;
+
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 1000;
   font-size: larger;
@@ -249,7 +252,7 @@ a:active {
 strong,
 b {
   color: #110b0b;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 em,
@@ -257,13 +260,12 @@ i {
   font-style: italic;
 }
 
-p {
+p-2rem-margin {
   margin: 0 0 2rem 0;
 }
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -272,7 +274,7 @@ h6 {
   line-height: 1.5;
   margin: 5px 0 1rem 0;
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
+
 }
 
 h1 a,
@@ -291,7 +293,7 @@ h3.major,
 h4.major,
 h5.major,
 h6.major {
-  border-bottom: solid 1px #ffffff;
+  border-bottom: solid 1px #509ea0;
   width: -moz-max-content;
   width: -webkit-max-content;
   width: -ms-max-content;
@@ -756,12 +758,8 @@ ol li {
 ul {
   list-style: disc;
   margin: 0 0 2rem 0;
-  padding-left: 1em;
 }
 
-ul li {
-  padding-left: 0.5em;
-}
 
 ul.alt {
   list-style: none;
@@ -1451,9 +1449,7 @@ body.is-preload #header .content .inner {
   max-width: 100%;
   z-index: 3;
 }
-#main article p {
-  color: black;
-}
+
 #main article h1 {
   font-size: large;
 }
@@ -1467,16 +1463,20 @@ body.is-preload #header .content .inner {
     -webkit-transform 0.325s ease-in-out;
   -ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
   transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
-  padding: 2rem 2.5rem 1.5rem 2.5rem;
   margin: 3rem 3rem 3rem;
   position: relative;
-  width: 40rem;
   max-width: 100%;
+    padding: 2rem 2.5rem 1.5rem 2.5rem;
   background-color: rgb(192 245 255 / 82%);
   border-radius: 4px;
   opacity: 0;
 }
+@media (min-width: 767.98px) {
+ #main article {
+  width: 75rem;
+ }
 
+}
 #main article.active {
   -moz-transform: translateY(0);
   -webkit-transform: translateY(0);
@@ -1527,7 +1527,7 @@ body.is-preload #header .content .inner {
 
 @media screen and (max-width: 736px) {
   #main {
-    width: 80%;
+
   }
 
   #main article .close:before {
@@ -1624,12 +1624,14 @@ positioned our isntructors come to yo div at bottom of container
   background-color: rgb(240, 255, 255);
   color: #00a1a1;
   margin-bottom: 0;
-
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
   font-weight: 600;
 }
 .p-bkgd {
   margin-left: 2rem;
   margin-top: 3rem;
+
 }
 
 #wave-p {
@@ -1650,6 +1652,7 @@ positioned our isntructors come to yo div at bottom of container
   margin: 1rem;
   background-color: rgba(255, 255, 255, 0.739);
   text-align: center;
+  border-radius: 30px;
 }
 
 .info-boxP {
@@ -1758,7 +1761,7 @@ positioned our isntructors come to yo div at bottom of container
   max-width: 100%;
   height: auto;
   margin: auto;
-  border-radius: 10%;
+  border-radius: 30px;
 }
 
 @media screen and (min-width: 1300px) {
@@ -1800,6 +1803,12 @@ positioned our isntructors come to yo div at bottom of container
   padding-left: 1rem;
   text-align: center;
 }
+.miami-img {
+  margin-top: 2rem;
+}
+.miami-text {
+  margin-top: 2rem;
+}
 .kevin-div {
   background-color: #feffffbe;
 }
@@ -1810,6 +1819,10 @@ positioned our isntructors come to yo div at bottom of container
   word-wrap: break-word;
   text-align: center;
   padding: 1rem;
+}
+.noPoolFontHeavy{
+  font-weight: 600;
+  color: green;
 }
 .who-p {
   padding: 1rem;
@@ -1854,7 +1867,7 @@ footer {
 }
 
 .poolPrice li {
-  display: inline-block;
+
   padding: 1rem;
 }
 .largePrice {
@@ -1900,30 +1913,128 @@ footer {
   width: 100%;
   height: 100%;
 }
-/*gallery */
-/* .gal{
-	flex-wrap: wrap;
 
+.map-heading {
+  max-width: fit-content;
 }
 
-.gal-col{
-
-	flex: 1 1 auto;
-    flex-basis: 175px;
-    margin: .5em;
-    max-width: 530px;
-    max-height: 300px;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-	flex-basis: calc(175px * 1 );
-}
-.gal-col img{
-	display: inline-block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.map-heading p {
+  color: rgb(69, 128, 150);
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
 
 }
+/* Add CSS rules for the hover effect */
+.map-city:hover {
+  cursor: pointer;
+  color: rgb(0, 212, 255)
+  /* Change the color to your desired hover color */
+}
 
- */
+.map-cities {
+  font-size: 1.1rem;
+}
+.la-pricing > div {
+  width: max-content;
+}
+.pricing-list-la{
+ padding-left:1.5rem;
+}
+.pricing-list-la > li {
+  font-weight: 500;
+  font-size: larger
+}
+.la-pricing-title{
+    color: #00a1a1;
+    font-weight: 850;
+    line-height: 1.5;
+    margin: 5px 0 1rem 0;
+    font-size: larger;
+ }
+
+ .la-pricing > div {
+  border-radius: 30px;
+  background-color: white;
+ }
+.classPhotoCaption{
+  max-width: 400px;
+}
+.class-photo{
+  max-width: 400px;
+  border-radius: 30px;
+
+}
+.classes{
+  background-color: white;
+}
+.swim-classes{
+  background-color: white;
+}
+.swim-classes-top {
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+}
+.swim-classes-bottom {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.inner > p {
+  color: #ffffff;
+}
+
+li > a{
+  color:white;
+}
+
+.footer-icons > a{
+  color: #b3eaff;
+}
+
+.major{
+  color: #00a1a1;
+}
+
+.display-6{
+      color: #00a1a1;
+        font-weight: 850;
+        line-height: 1.5;
+        margin: 5px 0 1rem 0;
+        text-transform: uppercase;
+
+}
+.classes-p-title{
+  font-size: 1.5rem;
+  color: #00a1a1;
+  font-family: 'Noto Sans', sans-serif;
+  padding-bottom: 2rem;
+}
+.classes-p{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+}
+.notoBold{
+  font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+.articlePadding{
+  padding-top: 1rem;
+  border-bottom: solid 1px #509ea0;
+}
+@media (max-width: 767.98px) {
+  .noPadding{
+    padding: 0;
+  }
+  .quoteMobileMargin{
+    margin-right: 2rem;
+  }
+  .lessonsClass{
+    padding: 0;
+  }
+  .class-photo{
+    max-width: 250px;
+  }
+}
+.price-class{
+  color: green;
+}
